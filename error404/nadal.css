@@ -1,0 +1,62 @@
+* { margin:0; padding: 0;} 
+
+body { background-color: #ff8000; color: white; font-family: 'Open Sans', sans-serif; text-align: center; }
+
+h1  { font-family: 'Archivo Black', sans-serif; font-size: 100px; color: yellow;}
+
+.fotonadal img { width: 100%; border-radius: 50%; }
+
+.fotonadal  { width: 20%;}
+
+.contenedor1 { display: flex; flex-direction: row; justify-content: center;}
+
+.contenedor2  { display: flex; flex-direction: row; justify-content: center; margin: 1%;}
+
+.h2 {  font-size: 30px;  display: inline-flex; margin-top: 3%; margin-left: 1%; color: yellow; } 
+
+.boton a { text-decoration: none; font-size: 20px; width: 30%; padding: 5px; text-align: center; background-color:yellow; color: black; border: 5px solid #ff8000; }
+
+.boton { margin-left: 20%; margin-top: -3%;  }
+
+
+.pelota{
+  background-image: url("../error404/pelotas.jpg");
+  width: 200px;
+  height: 200px; 
+  animation-name: Steps1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(3);
+}
+
+@keyframes Steps1{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 600px;
+    }
+}
+
+
+@keyframes mostrar{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.fotonadal img:nth-child(1){
+    animation-name: mostrar;
+    animation-duration: 4s;
+    animation-delay:1s ;
+    animation-fill-mode: backwards ;
+}
+
+
+
+
+
+
